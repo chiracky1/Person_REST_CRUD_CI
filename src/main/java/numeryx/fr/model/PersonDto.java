@@ -2,7 +2,7 @@ package numeryx.fr.model;
 
 public class PersonDto {
 	
-	private long id;
+	private long idPerson;
 	private String firstName;
 	private String lastName;
 	private String profession;
@@ -11,14 +11,14 @@ public class PersonDto {
 	/**
 	 * @return the id
 	 */
-	public long getId() {
-		return id;
+	public long getIdPerson() {
+		return idPerson;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(long id) {
-		this.id = id;
+	public void setIdPerson(long idPerson) {
+		this.idPerson = idPerson;
 	}
 	/**
 	 * @return the firstName

@@ -59,7 +59,7 @@ public class PersonController {
 		if(Objects.isNull(person)) {
 			return new ApiResponse<Person>(HttpStatus.NOT_FOUND.value(), "Person with id: "+id+ " not found", null);
 		}	
-		p.setId(id);
+		p.setIdPerson(id);
 		return new ApiResponse<Person>(
 				HttpStatus.OK.value(), 
 				"Person updated successfully", 

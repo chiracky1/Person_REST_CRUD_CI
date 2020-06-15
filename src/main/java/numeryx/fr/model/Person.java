@@ -20,7 +20,7 @@ public class Person implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long idPerson;
 	
 	@Column
 	private String firstName;
@@ -42,16 +42,14 @@ public class Person implements Serializable {
 	}
 
 	/**
-	 * @param id
 	 * @param firstName
 	 * @param lastName
 	 * @param profession
 	 * @param tel
 	 * @param address
 	 */
-	public Person(long id, String firstName, String lastName, String profession, String tel, String address) {
+	public Person(String firstName, String lastName, String profession, String tel, String address) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.profession = profession;
@@ -62,15 +60,15 @@ public class Person implements Serializable {
 	/**
 	 * @return the id
 	 */
-	public long getId() {
-		return id;
+	public Long getIdPerson() {
+		return idPerson;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(long id) {
-		this.id = id;
+	public void setIdPerson(long idPerson) {
+		this.idPerson = idPerson;
 	}
 
 	/**
@@ -145,7 +143,7 @@ public class Person implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", profession=" + profession
+		return "Person [idPerson=" + idPerson + ", firstName=" + firstName + ", lastName=" + lastName + ", profession=" + profession
 				+ ", tel=" + tel + ", address=" + address + "]";
 	}
 	

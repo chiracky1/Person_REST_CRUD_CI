@@ -39,7 +39,7 @@ public class PersonServiceImpl implements PersonService {
 	@Override
 	public Person createPerson(PersonDto p) {
 		Person person = new Person();
-		person.setId(p.getId());
+		person.setIdPerson(p.getIdPerson());
 		person.setFirstName(p.getFirstName());
 		person.setLastName(p.getLastName());
 		person.setProfession(p.getProfession());
