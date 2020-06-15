@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/eclipse,java,maven
-# Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,java,maven
+# Created by https://www.gitignore.io/api/java,maven,eclipse
+# Edit at https://www.gitignore.io/?templates=java,maven,eclipse
 
 ### Eclipse ###
 .metadata
@@ -14,8 +14,6 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-.project
-.classpath
 
 # External tool builders
 .externalToolBuilders/
@@ -55,19 +53,22 @@ local.properties
 
 # Annotation Processing
 .apt_generated/
-.apt_generated_test/
 
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
 .worksheet
 
-# Uncomment this line if you wish to ignore the project description file.
-# Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
-
 ### Eclipse Patch ###
-# Spring Boot Tooling
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Annotation Processing
+.apt_generated
+
 .sts4-cache/
 
 ### Java ###
@@ -105,7 +106,7 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.flattened-pom.xml
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse,java,maven
+# End of https://www.gitignore.io/api/java,maven,eclipse
