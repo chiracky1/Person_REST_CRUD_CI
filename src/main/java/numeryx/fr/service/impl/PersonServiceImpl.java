@@ -48,15 +48,6 @@ public class PersonServiceImpl implements PersonService {
 		return dao.save(person);
 	}
 
-//	@Override
-//	public Person updatePerson(PersonDto p) {
-//		Person person = getPersonById(p.getId());
-//		if(person != null) {
-//			BeanUtils.copyProperties(p, person);
-//		}
-//		return dao.save(person);
-//	}
-
 	@Override
 	public void deletePerson(Long id) {
 		dao.deleteById(id);
