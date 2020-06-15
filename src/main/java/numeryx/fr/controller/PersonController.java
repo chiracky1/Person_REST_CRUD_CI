@@ -46,13 +46,13 @@ public class PersonController {
 	}
 	
 	@PostMapping
-	public ApiResponse<Person> createPerson(@RequestBody PersonDto p){
+	public ApiResponse<Person> createPerson(@RequestBody Person p){
 		Preconditions.checkNotNull(p);
 		return new ApiResponse<Person>(HttpStatus.OK.value(), "Person saved successfully ", service.createPerson(p));
 	}
 	
 	@PutMapping("/{id}")
-	public ApiResponse<Person> updatePerson(@PathVariable("id") Long id,@RequestBody PersonDto p){
+	public ApiResponse<Person> updatePerson(@PathVariable("id") Long id,@RequestBody Person p){
 		Preconditions.checkNotNull(p);
 		Preconditions.checkNotNull(id);
 		Person person = service.getPersonById(id);

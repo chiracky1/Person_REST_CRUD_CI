@@ -10,7 +10,7 @@ public interface PersonService {
 	List<Person> getAllPersons();
 	Person getPersonById(Long id);
 	Person getByTel(String tel);
-	Person createPerson(PersonDto p);
+	Person createPerson(Person p);
 //	Person updatePerson(PersonDto p);
 	void deletePerson(Long id);
 
