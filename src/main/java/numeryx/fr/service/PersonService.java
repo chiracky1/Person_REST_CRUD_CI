@@ -3,7 +3,6 @@ package numeryx.fr.service;
 import java.util.List;
 
 import numeryx.fr.model.Person;
-import numeryx.fr.model.PersonDto;
 
 public interface PersonService {
 	

@@ -19,7 +19,6 @@ import com.google.common.base.Preconditions;
 
 import numeryx.fr.model.ApiResponse;
 import numeryx.fr.model.Person;
-import numeryx.fr.model.PersonDto;
 import numeryx.fr.service.PersonService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)

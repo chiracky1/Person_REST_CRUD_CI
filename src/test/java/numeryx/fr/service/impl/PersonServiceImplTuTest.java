@@ -24,7 +24,7 @@ import numeryx.fr.model.Person;
 import numeryx.fr.service.PersonService;
 
 @ExtendWith(SpringExtension.class)
-public class PersonServiceImplTest {
+public class PersonServiceImplTuTest {
 	
 	@MockBean
 	private PersonDAO dao;

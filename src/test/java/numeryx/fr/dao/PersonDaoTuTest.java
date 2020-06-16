@@ -14,7 +14,7 @@ import numeryx.fr.model.Person;
 
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
-public class PersonDaoTest {
+public class PersonDaoTuTest {
 	
 	@Autowired
 	private TestEntityManager entityManager;

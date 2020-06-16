@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import numeryx.fr.dao.PersonDAO;
 import numeryx.fr.model.Person;
-import numeryx.fr.model.PersonDto;
 import numeryx.fr.service.PersonService;
 @Service
 public class PersonServiceImpl implements PersonService {
