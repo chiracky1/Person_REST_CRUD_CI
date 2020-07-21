@@ -20,13 +20,13 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-//@Configuration
-//@EnableJpaRepositories(basePackages = "numeryx.fr.dao")
-//@PropertySource("classpath:application-integrationtest.properties")
-//@EnableTransactionManagement
+@Configuration
+@EnableJpaRepositories(basePackages = "numeryx.fr.dao")
+@PropertySource("classpath:application-integrationtest.properties")
+@EnableTransactionManagement
 public class MysqlConfig {
 
-	/*@Autowired
+	@Autowired
 	private Environment env;
 	
 	@Bean
@@ -74,5 +74,5 @@ public class MysqlConfig {
         
     
         return hibernateProperties;
-    }*/
+    }
 }
