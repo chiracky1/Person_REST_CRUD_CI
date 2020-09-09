@@ -74,5 +74,14 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>integration-test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
 
 </project>

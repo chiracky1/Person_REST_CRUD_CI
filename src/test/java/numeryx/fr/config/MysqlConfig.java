@@ -30,7 +30,7 @@ public class MysqlConfig {
 	private Environment env;
 	
 	@Bean
-	@Profile("test")
+	@Profile("integration-test")
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getProperty("jdbc.driverClassName"));
